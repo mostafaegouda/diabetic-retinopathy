@@ -124,7 +124,7 @@ const ToolStepper = () => {
     // let res = prediction[0][0] < 0.99 ? 1 : 0;
     // console.log(res);
     // setResult(res);
-    let res = await fetch("http://127.0.0.1:5000/upload", {
+    let res = await fetch("http://164.92.206.127/flask/upload", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ file: imageURL }),
