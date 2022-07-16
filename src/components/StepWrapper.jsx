@@ -138,7 +138,7 @@ const StepWrapper = ({
 
   let showStartTest = photo && !result && currentStep === 2 ? true : false;
 
-  let showSubmit = result === 1;
+  let showSubmit = result !== 0;
 
   return (
     <Wrapper>
