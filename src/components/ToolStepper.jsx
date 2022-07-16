@@ -13,8 +13,6 @@ import Dropzone from "react-dropzone";
 import { useCallback, useEffect, useState } from "react";
 import AdviceList from "./AdviceList";
 import PatientForm from "./PatientForm";
-
-import * as tf from "@tensorflow/tfjs";
 // import * as cv from "opencv.js";
 
 const B = styled.b`
