@@ -137,7 +137,6 @@ const ToolStepper = () => {
   };
   useEffect(() => {
     if (result !== null) setCurrentStep((currentStep) => currentStep + 1);
-    else console.log("lol");
   }, [result]);
 
   const onDrop = useCallback((acceptedFiles) => {
@@ -277,12 +276,13 @@ const ToolStepper = () => {
               </div>
             </>
           )}
-          {result === 1 && (
+          {result !== 0 && (
             <>
               <h1>
                 Diagnosis:{" "}
                 <span style={{ color: "#DD4242", fontWeight: "bold" }}>
-                  Diabetic Retinopathy detected
+                  {result === 1 ? "Mild" : "Severe"} Diabetic Retinopathy
+                  detected
                 </span>
               </h1>
               <p>
