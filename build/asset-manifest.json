@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/diabetic-retinopathy/static/css/main.706e9f18.css",
-    "main.js": "/diabetic-retinopathy/static/js/main.6f1e95b5.js",
+    "main.js": "/diabetic-retinopathy/static/js/main.abbb8624.js",
     "static/media/uni_logo.png": "/diabetic-retinopathy/static/media/uni_logo.a97d4300b75a91655170.png",
     "static/media/retina-photo.png": "/diabetic-retinopathy/static/media/retina-photo.26a72e2e64a1ddae7aee.png",
     "static/media/placeholder.png": "/diabetic-retinopathy/static/media/placeholder.985a5f23b26f94ed39db.png",
@@ -19,10 +19,10 @@
     "static/media/arrow-circle-right.svg": "/diabetic-retinopathy/static/media/arrow-circle-right.86c2a25be7f04ed6200bdf4ece75849f.svg",
     "static/media/tick-circle.svg": "/diabetic-retinopathy/static/media/tick-circle.ebc21123332a78c96ee2c6d68781607d.svg",
     "main.706e9f18.css.map": "/diabetic-retinopathy/static/css/main.706e9f18.css.map",
-    "main.6f1e95b5.js.map": "/diabetic-retinopathy/static/js/main.6f1e95b5.js.map"
+    "main.abbb8624.js.map": "/diabetic-retinopathy/static/js/main.abbb8624.js.map"
   },
   "entrypoints": [
     "static/css/main.706e9f18.css",
-    "static/js/main.6f1e95b5.js"
+    "static/js/main.abbb8624.js"
   ]
 }
