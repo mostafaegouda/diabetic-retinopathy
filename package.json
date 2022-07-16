@@ -13,6 +13,7 @@
     "@testing-library/react": "^13.2.0",
     "@testing-library/user-event": "^13.5.0",
     "blueimp-load-image": "^5.16.0",
+    "firebase": "^9.9.0",
     "ndarray": "^1.0.19",
     "ndarray-ops": "^1.2.2",
     "onnxjs": "^0.1.8",

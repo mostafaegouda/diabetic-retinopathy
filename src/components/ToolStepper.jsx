@@ -13,6 +13,11 @@ import Dropzone from "react-dropzone";
 import { useCallback, useEffect, useState } from "react";
 import AdviceList from "./AdviceList";
 import PatientForm from "./PatientForm";
+import {
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+} from "firebase/auth";
+import auth from "../firebaseAuth";
 // import * as cv from "opencv.js";
 
 const B = styled.b`
@@ -105,6 +110,7 @@ const ToolStepper = () => {
   const [currentStep, setCurrentStep] = useState(0);
   const [isPredicitng, setIsPredicitng] = useState(false);
   const [done, setdone] = useState(false);
+
   const getPrediction = async (imageURL) => {
     setCurrentStep((currentStep) => currentStep + 1);
     setIsPredicitng(true);
@@ -119,6 +125,7 @@ const ToolStepper = () => {
       setResult(prediction.diagnosis);
     }, 2000);
   };
+
   useEffect(() => {
     if (result !== null) setCurrentStep((currentStep) => currentStep + 1);
   }, [result]);

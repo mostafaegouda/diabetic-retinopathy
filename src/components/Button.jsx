@@ -84,9 +84,9 @@ const Button = ({
   }
   return (
     <StyledButton color={color} text={text} {...other}>
-      {reversed && <Icon className="buttonIcon" />}
+      {reversed && Icon && <Icon className="buttonIcon" />}
       {children}
-      {!reversed && <Icon className="buttonIcon" />}
+      {!reversed && Icon && <Icon className="buttonIcon" />}
     </StyledButton>
   );
 };

@@ -47,7 +47,7 @@ const ColorlibConnector = muiStyled(StepConnector)(({ theme }) => ({
   },
   [`& .${stepConnectorClasses.line}`]: {
     width: 3,
-    height: 40,
+    height: 25,
     border: 0,
     backgroundColor:
       theme.palette.mode === "dark" ? theme.palette.grey[800] : "#eaeaf0",
@@ -87,6 +87,7 @@ function ColorlibStepIcon(props) {
     3: <UploadPhotoIcon />,
     4: <ProcessorIcon />,
     5: <CompletedIcon />,
+    6: <CompletedIcon />,
   };
 
   return (
