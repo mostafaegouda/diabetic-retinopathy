@@ -8,11 +8,11 @@ import EyeIllustarion from "../assets/eye.png";
 
 const advice = [
   {
-    text: "Monitor your blood sugar level",
+    text: "Monitor their blood sugar level",
     image: BloodSugarIllustarion,
   },
   {
-    text: "Manage your diabetes",
+    text: "Manage their diabetes",
     image: BodyIllustration,
   },
   {
@@ -20,7 +20,7 @@ const advice = [
     image: TestIllustarion,
   },
   {
-    text: "Keep your blood pressure and cholesterol under control",
+    text: "Keep their blood pressure and cholesterol under control",
     image: BloodVesselIllustarion,
   },
   {
@@ -35,7 +35,7 @@ const StyledAdviceCard = styled.div`
   display: flex;
   align-items: center;
   gap: 1rem;
-  padding: 0.5rem 1rem;
+  padding: 0.6rem 1rem;
   background-color: white;
   border-radius: 0.5rem;
   img {
@@ -46,7 +46,7 @@ const StyledAdviceCard = styled.div`
 const StyledAdviceList = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 0.7rem;
+  gap: 0.8rem;
 `;
 
 const AdviceCard = ({ illustration, advice, className }) => {

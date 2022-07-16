@@ -108,20 +108,6 @@ const ToolStepper = () => {
   const getPrediction = async (imageURL) => {
     setCurrentStep((currentStep) => currentStep + 1);
     setIsPredicitng(true);
-    // const model = await tf.loadLayersModel(
-    //   "https://raw.githubusercontent.com/mostafaegouda/diabetic-retinopathy-model/main/model.json"
-    // );
-    // let image = document.createElement("img");
-    // image.setAttribute("src", imageURL);
-    // image.setAttribute("width", "224");
-    // image.setAttribute("height", "224");
-    // let tensor = tf.browser.fromPixels(image);
-    // let prediction = model.predict(tensor.reshape([1, ...tensor.shape]));
-    // prediction = await prediction.array();
-    // console.log(prediction);
-    // let res = prediction[0][0] < 0.99 ? 1 : 0;
-    // console.log(res);
-    // setResult(res);
     let res = await fetch("http://164.92.206.127/flask/upload", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -252,11 +238,7 @@ const ToolStepper = () => {
                 blindness in the adult working population.
               </p>
             </ProccesingFacts>
-            <img
-              src={photo ? photo : PlaceholderImage}
-              style={{ borderRadius: "50%" }}
-              alt=""
-            />
+            <img src={photo ? photo : PlaceholderImage} alt="" />
           </div>
         </StyledStep>
         <StyledStep label="Results" className="results">
@@ -268,6 +250,9 @@ const ToolStepper = () => {
                   No Diabetic Retinopathy detected
                 </span>
               </h1>
+              <p>
+                <B>Please advice patients to:</B>
+              </p>
               <div className="stepContent">
                 <AdviceList />
                 <img src={CheckIcon} alt="" />
@@ -283,12 +268,6 @@ const ToolStepper = () => {
                   detected
                 </span>
               </h1>
-              <p>
-                <B>
-                  Please go to the nearest Ophthalmologist to get the proper
-                  care and fill out the info below.
-                </B>
-              </p>
               <div className="stepContent">
                 <PatientForm setdone={setdone} />
                 <img src={CloseIcon} alt="" />
